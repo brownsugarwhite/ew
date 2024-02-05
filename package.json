@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "serve",
+    "start": "serve -p 5000",
     "build": "echo This is a static template, there is no bundler or bundling involved!"
   },
   "repository": {
@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/codesandbox-app/static-template#readme",
   "devDependencies": {
-    "serve": "^11.2.0"
+    "serve": "^14.2.1"
   }
 }
