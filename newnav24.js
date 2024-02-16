@@ -1,5 +1,3 @@
-TEXTXTXTSBS
-
 console.log("Energiewatt - Die Kraft der Sonne");
 
 //Animations
