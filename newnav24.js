@@ -63,8 +63,12 @@ function getViewportCenterTransformOrigin(element) {
 }
 // nav desktop hover events
 $(document).ready(function() {
-    $('.ew-nav-button').on('mouseenter touchstart', function(event) {
-
+   $('.ew-nav-button').on('mouseenter touchstart', function(event) {
+    // Prevent the default touchstart action and stop it from bubbling up to avoid triggering the event twice
+    if (event.type === "touchstart") {
+        event.stopPropagation();
+        event.preventDefault();
+    }
         var navButtonIndex = $(this).index();
         var superNavContent = $('.supernav-content');
         var openSupernavContent = $('.supernav-content').eq(navButtonIndex);
