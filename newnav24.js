@@ -63,7 +63,7 @@ function getViewportCenterTransformOrigin(element) {
 }
 // nav desktop hover events
 $(document).ready(function() {
-   $('.ew-nav-button').on('mouseenter click', function(event) {
+   $('.ew-nav-button').on('click', function(event) {
         var navButtonIndex = $(this).index();
         var superNavContent = $('.supernav-content');
         var openSupernavContent = $('.supernav-content').eq(navButtonIndex);
